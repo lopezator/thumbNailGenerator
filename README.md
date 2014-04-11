@@ -7,7 +7,7 @@ Works by itself, you only have to specificy a couple urls containing an image, a
 
 Any doubts:
 
-not4rent@gmai.com
+not4rent@gmail.com
 
 Regards,
 
