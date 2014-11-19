@@ -7,14 +7,14 @@ abstract class Classes_Image
 	protected abstract function getSize();
 	protected abstract function getType();
 	
-	public function makeThumbNail($id, $urlFrom) {
-		$path = $this->getPath($id);
-		mkdir($path, 0755, true);
+	public function makeThumbNail($urlFrom) {
+		$path = $this->getPath();
+        if(!file_exists($path)) mkdir($path, 0755, true);
 		$this->_createImage($path, $urlFrom);
 	}
 	
-	protected function getPath($id) {
-		return $this->_getBasePath() . "/" . $id . "/";
+	protected function getPath() {
+		return $this->_getBasePath() . "/";
 	}
 	
 	private function _getBasePath()

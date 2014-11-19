@@ -6,9 +6,9 @@ require_once(dirname(__FILE__) . "/../categoryTinyThumbNail.php");
 
 class Factories_ImageCategory extends AbstractFactories_Image 
 {
-	public function makeThumbNails($id, $urlFrom) {
-		CategoryMediumThumbNail::instantiate()->makeThumbNail($id, $urlFrom);
-		CategorySmallThumbNail::instantiate()->makeThumbNail($id, $urlFrom);
-		CategoryTinyThumbNail::instantiate()->makeThumbNail($id, $urlFrom);
+	public function makeThumbNails($urlFrom) {
+		CategoryMediumThumbNail::instantiate()->makeThumbNail($urlFrom);
+		CategorySmallThumbNail::instantiate()->makeThumbNail($urlFrom);
+		CategoryTinyThumbNail::instantiate()->makeThumbNail($urlFrom);
 	}
 }
