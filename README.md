@@ -18,3 +18,5 @@ Note:
 The code contains the phpThumb library inside the /lib folder. I don't own this library.
 
 It used to be hosted at: http://phpthumb.gxdlabs.com (now broken)
+
+Hello WORLD UPV/EHU.
